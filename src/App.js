@@ -3,13 +3,13 @@ import React, {useState} from 'react'
 import Alert from './components/Alert';
 import Navbar from "./components/Navbar";
 import TextForm from './components/TextForm'
-import {
-  BroswerRouser as Router,
-  Routes,
-  Route,
-  Link,
-  BrowserRouter
-} from 'react-router-dom';
+// import {
+//   BroswerRouser as Router,
+//   Routes,
+//   Route,
+//   Link,
+//   BrowserRouter
+// } from 'react-router-dom';
 
 
 function App() {
@@ -80,16 +80,19 @@ function App() {
     }
   }
    return (
-    <BrowserRouter>
+    // <BrowserRouter>
+    <>
           <Navbar title="TextUtils" aboutText="About TextUtils" mode={mode} toggleMode={toggleMode}/>
       <Alert alert={alert}></Alert>
       <div className="container my-3">
-        <Routes>
-          <Route path='/about' element={<About/>}/>
-         <Route path='/' element={<TextForm heading="Enter the text to analyze below" mode={mode} showAlert={showAlert} taMode={taMode}/>}/>
-        </Routes>       
+        {/* <Routes> */}
+          {/* <Route path='/about' element={<About/>}/> */}
+         {/* <Route path='/' element={<TextForm heading="Enter the text to analyze below" mode={mode} showAlert={showAlert} taMode={taMode}/>}/> */}
+        {/* </Routes>        */}
+        <TextForm heading="Enter the text to analyze below" mode={mode} showAlert={showAlert} taMode={taMode}/>
         </div>
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
+    </>
   );
 }
 
