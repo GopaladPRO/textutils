@@ -39,12 +39,12 @@ export default function TextForm(props) {
             <div className="mb-3">
                 <textarea className="form-control" id="myBox" rows="8" value={text} onChange={handleOnChange} style={{backgroundColor:props.taMode,color:props.mode==='light'?'black':'white'}}></textarea>
             </div>
-            <button className={`btn btn-${props.mode} bg-${props.mode} mx-2`} onClick={handleUpperCaseClick} >Convert to UpperCase</button>
-            <button className={`btn btn-${props.mode} bg-${props.mode} mx-2`} onClick={handleLowerCaseClick} >Convert to LowerCase</button>
-            <button className={`btn btn-${props.mode} bg-${props.mode} mx-2`} onClick={handleReverseClick} >Reverse text</button>
-            <button className={`btn btn-${props.mode} bg-${props.mode} mx-2`} onClick={handleCopy} >Copy text</button>
-            <button className={`btn btn-${props.mode} bg-${props.mode} mx-2`} onClick={handleExtraSpaces} >Remove extra spaces</button>
-            <button className={`btn btn-${props.mode} bg-${props.mode} mx-2`} onClick={handleClearClick} >Clear text</button>
+            <button className={`btn btn-${props.mode} bg-${props.mode} mx-2 my-2`} onClick={handleUpperCaseClick} >Convert to UpperCase</button>
+            <button className={`btn btn-${props.mode} bg-${props.mode} mx-2 my-2`} onClick={handleLowerCaseClick} >Convert to LowerCase</button>
+            <button className={`btn btn-${props.mode} bg-${props.mode} mx-2 my-2`} onClick={handleReverseClick} >Reverse text</button>
+            <button className={`btn btn-${props.mode} bg-${props.mode} mx-2 my-2`} onClick={handleCopy} >Copy text</button>
+            <button className={`btn btn-${props.mode} bg-${props.mode} mx-2 my-2`} onClick={handleExtraSpaces} >Remove extra spaces</button>
+            <button className={`btn btn-${props.mode} bg-${props.mode} mx-2 my-2`} onClick={handleClearClick} >Clear text</button>
         </div>
         <div className="container my-3" style={{color:props.mode==='light'?'black':'white'}}>
             <h2>Your text Summary</h2>
